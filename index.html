@@ -196,6 +196,7 @@
     display:flex;
     flex-direction:column;
     justify-content:center;
+    text-align:center;
     padding-block:clamp(70px,10vw,64px) 90px;
     background:
       radial-gradient(1100px 620px at 82% -10%, rgba(184,154,106,.16), transparent 60%),
@@ -206,21 +207,24 @@
   .hero h1{
     font-size:clamp(2.3rem, 5.6vw, 4.4rem);
     max-width:15ch;
+    margin-inline:auto;
     letter-spacing:-.01em;
   }
   .hero .sub{
     margin-top:30px;
+    margin-inline:auto;
     max-width:46ch;
     font-size:clamp(1.05rem,1.6vw,1.2rem);
     color:var(--on-ink-dim);
   }
-  .hero .cta-row{ margin-top:44px; }
+  .hero .cta-row{ margin-top:44px; justify-content:center; }
   .hero-frame{
     margin-top:76px;
     padding-top:34px;
     border-top:1px solid rgba(242,237,230,.12);
     display:flex;
     flex-wrap:wrap;
+    justify-content:center;
     gap:32px 56px;
     color:var(--on-ink-faint);
     font-size:13px;
@@ -817,7 +821,7 @@
     <div class="cta-row">
       <a class="btn" href="https://www.asaas.com/c/7xzwa4pq7ibn8qm8" target="_blank" rel="noopener">Quero meu diagnóstico <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
-    <span class="cta-note">Encontro online individual de 1 hora · devolutiva personalizada em até 48h úteis</span>
+    <span class="cta-note">Encontro online individual de 1 hora</span>
 
     <div class="hero-frame">
       <div><b>1 hora</b>ao vivo, individual, com Kamila</div>
