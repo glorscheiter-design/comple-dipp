@@ -258,7 +258,13 @@
   .sticky-cta .info{ display:flex; flex-direction:column; }
   .sticky-cta .info span{ font-size:12px; color:var(--on-ink-faint); letter-spacing:.04em;}
   .sticky-cta .info strong{ font-family:var(--serif); font-weight:500; font-size:17px;}
-  @media (max-width:560px){ .sticky-cta .info{ display:none; } }
+  .sticky-actions{ display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+  .sticky-cta .btn{ font-size:12.5px; padding:.85em 1.5em; }
+  .sticky-cta .btn-ghost{ color:var(--on-ink); }
+  @media (max-width:560px){
+    .sticky-cta .info{ display:none; }
+    .sticky-cta{ justify-content:center; }
+  }
 
   /* ================= identification ================= */
   .marks{
@@ -1248,7 +1254,10 @@
 
 <div class="sticky-cta" id="stickyCta">
   <div class="info"><span>DIPP · Diagnóstico completo</span><strong>R$ 597,90 ou 12x de R$ 59,90</strong></div>
-  <a class="btn" href="https://www.asaas.com/c/7xzwa4pq7ibn8qm8" target="_blank" rel="noopener">Quero meu diagnóstico</a>
+  <div class="sticky-actions">
+    <a class="btn" href="https://www.asaas.com/c/7xzwa4pq7ibn8qm8" target="_blank" rel="noopener">Quero o DIPP</a>
+    <a class="btn btn-ghost" href="https://www.asaas.com/c/q5m32wdxh47fhqo5" target="_blank" rel="noopener">DIPP + Closet</a>
+  </div>
 </div>
 
 <script>
