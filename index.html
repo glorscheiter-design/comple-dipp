@@ -19,11 +19,11 @@
     --gold:      #B89A6A;
     --gold-soft: rgba(184,154,106,.38);
     --on-ink:        #F2EDE6;
-    --on-ink-dim:    rgba(242,237,230,.66);
-    --on-ink-faint:  rgba(242,237,230,.4);
+    --on-ink-dim:    rgba(242,237,230,.8);
+    --on-ink-faint:  rgba(242,237,230,.58);
     --on-paper:      #1A1814;
-    --on-paper-dim:  rgba(26,24,20,.66);
-    --on-paper-faint:rgba(26,24,20,.42);
+    --on-paper-dim:  rgba(26,24,20,.78);
+    --on-paper-faint:rgba(26,24,20,.58);
 
     --serif: "Playfair Display", "Iowan Old Style", "Georgia", serif;
     --sans:  "Archivo", "Helvetica Neue", Arial, sans-serif;
@@ -289,7 +289,7 @@
     color:#8C6E45;
     padding-top:3px;
   }
-  .mark p{ font-size:clamp(1.02rem,1.6vw,1.14rem); max-width:56ch; }
+  .mark p{ font-size:clamp(1.022rem,1.603vw,1.142rem); max-width:56ch; }
   .close-line{
     margin-top:54px;
     margin-inline:auto;
@@ -559,7 +559,7 @@
     background:var(--ink-2);
   }
   @media (max-width:640px){
-    .testi-photo{ aspect-ratio:3/2; }
+    .testi-photo{ width:55%; margin-inline:auto; }
   }
   .testi-photo img{
     width:100%; height:100%;
@@ -800,7 +800,9 @@
 
   @media (max-width:600px){
     .band{ padding-block:56px; }
-    .hero{ min-height:auto; padding-top:96px; }
+    .hero{ min-height:auto; padding-top:34px; }
+    .site-header{ padding-block:16px; }
+    .hero-eyebrow{ margin-bottom:14px; }
   }
 </style>
 </head>
@@ -821,7 +823,7 @@
   <div class="wrap">
     <div class="hero-eyebrow kicker">DIPP · Diagnóstico de Imagem, Presença e Posicionamento</div>
     <h1 class="reveal in">Tua imagem já está falando de ti.<br>A pergunta é se ela está dizendo <em>o que tu quer.</em></h1>
-    <p class="sub">Encontrar a solução para tu voltar a se vestir bem e feliz todos os dias ao acordar pela manhã.</p>
+    <p class="sub">Encontre a solução para que tu volte a se vestir bem e feliz todos os dias ao acordar pela manhã.</p>
     <div class="cta-row">
       <a class="btn" href="https://www.asaas.com/c/7xzwa4pq7ibn8qm8" target="_blank" rel="noopener">Quero meu diagnóstico <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
@@ -881,7 +883,7 @@
   <div class="wrap">
     <div class="section-head"><div class="kicker">A virada</div></div>
     <div class="virada-grid">
-      <p class="lede reveal">A indústria te ensinou a tratar imagem no varejo. Roupa nova, tendência nova, promessa nova. Por isso tu tem um armário cheio e continua com a mesma sensação de quinta-feira de manhã.</p>
+      <p class="lede reveal">Tu aprendeu a tratar a imagem no varejo. Roupa nova, tendência nova, promessa nova. Por isso tu tem um armário cheio e continua com a mesma sensação de quinta-feira de manhã.</p>
       <div class="reveal">
         <p>Só que roupa é a última camada. Antes dela vem a leitura: quem tu é, como tu se apresenta e como as pessoas te interpretam quando tu entra num lugar.</p>
         <p>Enquanto essa leitura não existe, cada compra é uma aposta. Depois que ela existe, cada escolha é uma decisão.</p>
@@ -1121,13 +1123,12 @@
 <section class="on-ink upsell-band" id="upsell">
   <div class="wrap">
     <div class="upsell-panel reveal">
-      <span class="upsell-eyebrow">DIPP + 30 Looks</span>
-      <h2>Saber o que combina é uma coisa. Não precisar pensar às 7h da manhã é outra.</h2>
+      <span class="upsell-eyebrow">DIPP + Closet</span>
+      <h2>A Kamila monta 30 looks pra ti. Com as roupas que tu já tem.</h2>
 
       <div class="upsell-body">
         <p>O DIPP te dá a direção. Mas existe uma distância entre entender a lógica e aplicar ela sozinha, com sono, atrasada, com o cabide na mão.</p>
         <p>Então tu pode escolher pular essa parte.</p>
-        <p class="upsell-callout">A Kamila monta 30 looks para ti. Com as roupas que tu já tem.</p>
         <p>Nenhuma compra. Nenhuma peça nova. Ela olha o teu armário real, aplica tudo o que descobriu sobre ti no diagnóstico e devolve trinta combinações prontas, montadas peça por peça, pensadas para a tua rotina de verdade: trabalho, reunião, viagem, encontro, dia comum.</p>
         <p class="upsell-pull">São trinta dias sem repetir. E, o mais importante, trinta dias sem decidir.</p>
       </div>
