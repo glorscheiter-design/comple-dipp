@@ -122,8 +122,12 @@
     cursor:pointer;
     transition:transform .25s ease, background .25s ease, color .25s ease, box-shadow .25s ease;
     white-space:nowrap;
+    max-width:100%;
   }
   .btn:hover{ transform:translateY(-2px); box-shadow:0 12px 28px -14px rgba(184,154,106,.6); }
+  @media (max-width:480px){
+    .btn{ white-space:normal; text-align:center; font-size:13.5px; padding:1em 1.6em; }
+  }
   .btn:focus-visible{ outline:2px solid var(--gold); outline-offset:3px; }
   .btn svg{ width:14px; height:14px; transition:transform .25s ease; }
   .btn:hover svg{ transform:translateX(3px); }
@@ -790,7 +794,7 @@
     border-top:1px solid rgba(242,237,230,.1);
   }
 
-  .cta-row{ display:flex; flex-wrap:wrap; gap:18px; align-items:center; justify-content:center; }
+  .cta-row{ display:flex; flex-wrap:wrap; gap:18px; align-items:center; justify-content:center; min-width:0; max-width:100%; }
 
   @media (max-width:600px){
     .band{ padding-block:56px; }
