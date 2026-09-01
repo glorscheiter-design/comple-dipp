@@ -18,6 +18,9 @@
     --paper-2:   #E9E1D2;
     --gold:      #B89A6A;
     --gold-soft: rgba(184,154,106,.38);
+    --orange:    #F2761A;
+    --pink:      #FC0FC0;
+    --green:     #25D366;
     --on-ink:        #F2EDE6;
     --on-ink-dim:    rgba(242,237,230,.8);
     --on-ink-faint:  rgba(242,237,230,.58);
@@ -96,7 +99,7 @@
 
   /* ---------- buttons ---------- */
   .btn{
-    --btnbg: var(--gold);
+    --btnbg: var(--orange);
     --btnfg: var(--ink);
     display:inline-flex;
     align-items:center;
@@ -117,7 +120,7 @@
     white-space:nowrap;
     max-width:100%;
   }
-  .btn:hover{ transform:translateY(-2px); box-shadow:0 12px 28px -14px rgba(184,154,106,.6); }
+  .btn:hover{ transform:translateY(-2px); box-shadow:0 12px 28px -14px rgba(0,0,0,.5); }
   @media (max-width:480px){
     .btn{ white-space:normal; text-align:center; font-size:13.5px; padding:1em 1.6em; }
   }
@@ -134,25 +137,20 @@
   .on-paper .btn-ghost{ color:var(--on-paper); }
   .btn-ghost:hover{ background:var(--gold); color:var(--ink); border-color:var(--gold); }
 
+  .btn-closet{ --btnbg: var(--pink); }
+  .btn-pix{ --btnbg: var(--green); }
+
   .cta-note{
     display:block;
     margin-top:14px;
     font-size:13px;
     letter-spacing:.02em;
+    text-align:center;
   }
   .on-ink .cta-note{ color:var(--on-ink-faint); }
   .on-paper .cta-note{ color:var(--on-paper-faint); }
 
-  .pix-link{
-    display:block;
-    margin-top:18px;
-    font-size:19px;
-    text-align:center;
-    color:var(--on-ink-dim);
-    text-decoration:underline;
-    text-underline-offset:4px;
-  }
-  .pix-link:hover{ color:var(--gold); }
+  .pix-row{ margin-top:18px; text-align:center; }
 
   /* ---------- reveal ---------- */
   .reveal{ opacity:0; transform:translateY(22px); transition:opacity .8s ease, transform .8s ease; }
@@ -271,7 +269,6 @@
   .sticky-cta .info strong{ font-family:var(--serif); font-weight:500; font-size:17px;}
   .sticky-actions{ display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
   .sticky-cta .btn{ font-size:12.5px; padding:.85em 1.5em; }
-  .sticky-cta .btn-ghost{ color:var(--on-ink); }
   @media (max-width:560px){
     .sticky-cta .info{ display:none; }
     .sticky-cta{ justify-content:center; }
@@ -1126,7 +1123,9 @@
           <a class="btn" href="https://www.asaas.com/c/7xzwa4pq7ibn8qm8" target="_blank" rel="noopener">Quero meu diagnóstico <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
         <span class="cta-note">Atendimento individual · agenda limitada por mês</span>
-        <a class="pix-link" href="https://wa.me/5551995685550?text=Ol%C3%A1%21%20Quero%20fazer%20o%20diagn%C3%B3stico%20DIPP%20e%20prefiro%20pagar%20%C3%A0%20vista%20no%20Pix.%20Pode%20me%20passar%20a%20chave%3F" target="_blank" rel="noopener">Prefere pagar à vista no Pix? Fala com a gente</a>
+        <div class="pix-row">
+          <a class="btn btn-pix" href="https://wa.me/5551995685550?text=Ol%C3%A1%21%20Quero%20fazer%20o%20diagn%C3%B3stico%20DIPP%20e%20prefiro%20pagar%20%C3%A0%20vista%20no%20Pix.%20Pode%20me%20passar%20a%20chave%3F" target="_blank" rel="noopener">Prefere pagar à vista no Pix? Fala com a gente</a>
+        </div>
       </div>
     </div>
   </div>
@@ -1167,7 +1166,7 @@
       <div class="upsell-foot">
         <div class="upsell-price">DIPP + 30 looks por:<strong>12x de R$ 89,90</strong></div>
         <div class="cta-row">
-          <a class="btn" href="https://www.asaas.com/c/q5m32wdxh47fhqo5" target="_blank" rel="noopener">Quero o DIPP + os 30 looks <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-closet" href="https://www.asaas.com/c/q5m32wdxh47fhqo5" target="_blank" rel="noopener">Quero o DIPP + os 30 looks <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </div>
     </div>
@@ -1268,7 +1267,7 @@
   <div class="info"><span>DIPP · Diagnóstico completo</span><strong>R$ 597,90 ou 12x de R$ 59,90</strong></div>
   <div class="sticky-actions">
     <a class="btn" href="https://www.asaas.com/c/7xzwa4pq7ibn8qm8" target="_blank" rel="noopener">Quero o DIPP</a>
-    <a class="btn btn-ghost" href="https://www.asaas.com/c/q5m32wdxh47fhqo5" target="_blank" rel="noopener">DIPP + Closet</a>
+    <a class="btn btn-closet" href="https://www.asaas.com/c/q5m32wdxh47fhqo5" target="_blank" rel="noopener">DIPP + Closet</a>
   </div>
 </div>
 
